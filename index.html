@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            margin: 0;
+            display: grid;
+            place-items: center;
+            padding: 24px;
+            background: #f7d8e5;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        main {
+            width: min(100%, 960px);
+            min-height: 320px;
+            display: flex;
+            flex-direction: column;
+            padding: 32px;
+            border: 1px solid #e5e7eb;
+            border-radius: 20px;
+            background: white;
+        }
+
+        header {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            grid-template-rows: auto auto;
+            align-items: start;
+        }
+
+        h1 {
+            grid-column: 2;
+            grid-row: 1;
+            margin: 0;
+            text-align: center;
+        }
+
+        .identity {
+            grid-column: 1 / 4;
+            grid-row: 2;
+            display: flex;
+            justify-content: space-between;
+            text-align: left;
+        }
+
+        .identity h3 {
+            margin: 0;
+        }
+
+        .interests {
+            max-width: 700px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .interests h2 {
+            margin: 0 0 12px;
+            font-family: "Trebuchet MS", "Arial Rounded MT Bold", sans-serif;
+        }
+
+        .interests p {
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        .page-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: auto;
+            padding-top: 32px;
+        }
+
+        .page-links a,
+        .page-links button {
+            padding: 12px 18px;
+            border: 0;
+            border-radius: 10px;
+            background: #d7a1a1;
+            color: white;
+            font: inherit;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .page-links button:disabled {
+            cursor: not-allowed;
+            opacity: 0.6;
+        }
+
+        @media (max-width: 560px) {
+            header {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+
+            h1 {
+                grid-column: 1;
+                grid-row: 1;
+            }
+
+            .identity {
+                grid-column: 1;
+                grid-row: 2;
+            }
+
+            .identity {
+                justify-content: space-between;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>About Me</h1>
+            <div class="identity">
+                <h3>Karen Dodo</h3>
+                <h3>10 - Emerald</h3>
+            </div>
+        </header>
+        <br>
+        <br>
+        <section class="interests">
+            <h2>My Interests</h2>
+            <p>Reading, going out, collecting sonny angels, collecting squishies, watching movies and shows, eating, sleeping, biking, and pretty much anything that keeps my mind busy.</p>
+        </section>
+        <br>
+        <section class="interests">
+            <h2>My Dreams</h2>
+            <p>I'm currently undecided as to what I want to be and what I want to do, but I dream of being successful and known to many people.</p>
+        </section>
+        <nav class="page-links" aria-label="Page links">
+            <a href="../Seatwork%20%231/index.html">Homepage</a>
+            <a href="../index.html">Element Checker</a>
+            <a href="../Drill%20File/index.html">School Club Members</a>
+        </nav>
+    </main>
+</body>
+</html>
